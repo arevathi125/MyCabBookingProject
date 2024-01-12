@@ -1,0 +1,31 @@
+
+<br>
+<br>
+<div align="center">
+<h3 style="color:darkorchid">Booking List</h3>
+<table border="1" >
+        <tr style="color: brown;">
+        <th>Cab_Id</th>
+        <th>Name</th>
+        <th>Pickup Location</th>
+        <th>Drop Location</th>
+        <th>Date</th>
+        <th>Time</th>
+        <th>Cab_Type</th>
+        <th>Edit Action</th>
+        <th>Delete Action</th>
+    </tr>
+
+    <tr *ngFor="let booking of bookings" style="color:blue">
+    <td>{{booking.cab_id}}</td>
+    <td>{{booking.name}}</td>
+    <td>{{booking.pickup_Location}}</td>
+    <td>{{booking.drop_Location}}</td>
+    <td>{{booking.date}}</td>
+    <td>{{booking.time}}</td>
+    <td>{{booking.cab_type}}</td>
+    <td align="center"><button (click)="editBookings(booking.cab_id)" style="color:darkorange;">Edit</button></td>
+    <td align="center"><button (click)="deleteBookings(booking.cab_id)" style="color: brown;">Delete</button></td>
+    </tr>
+</table>
+</div>

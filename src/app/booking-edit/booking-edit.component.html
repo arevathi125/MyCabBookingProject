@@ -1,0 +1,64 @@
+<br>
+      <br>
+<div align ="center" class="label">
+    <h2><i> Edit Booking Values</i></h2>
+    <form>
+        <div class ="form-group" >
+            <label>Cab_Id</label>
+        <input type="text" readonly name="cab_id" value="{{cab_id}}"><br>
+    </div>
+        <div class ="form-group" >
+            <label>Name</label>
+            <input type="text"  [(ngModel)]="booking.name" name="name">  
+        </div>   
+    <div class ="form-group" >
+        <label>Pickup Location </label>
+        <select class="form-select" [(ngModel)]="booking.pickup_Location" name="pickUpLocation">
+            <option value="12 hollow drive">12 hollow drive</option>
+            <option value="45 heaven blvd">45 heaven blvd</option>
+            <option value="65 st.louis">65 st.louis</option>
+          </select>
+    </div>
+    <div class ="form-group" >
+        <label>Drop Location</label>
+        <select class="form-select" [(ngModel)]="booking.drop_Location" name="dropLocation" >
+            <option value="43 house">43 house</option>
+            <option value="65 office">65 office</option>
+            <option value="80 temple">80 temple</option>
+          </select>
+    </div>
+    <div class ="form-group" >
+        <label>Date</label>
+        <input type="date" [(ngModel)]="booking.date" name="date">
+    </div>
+    <div class ="form-group" >
+        <label>Time</label>
+        <input type="time" [(ngModel)]="booking.time" name="time">
+    </div>
+    <div class ="form-group" >
+        <label>Cab Type</label>
+        <select class="form-select" [(ngModel)]="booking.cab_type" name="cabType" >
+            <option value="Luxury">Luxury</option>
+            <option value="Business">Business</option>
+            <option value="Economic">Economic</option>
+          </select>
+    </div>
+    <input type="submit" value="Update" (click)="updateBooking()" style="background-color:coral">
+    </form>
+    </div>  
+
+
+
+<!--<div align="center">
+<h1><i>Edit Booking Values</i></h1>
+<form>
+    Cab_Id: <input type="text" readonly name="cab_id" value="{{cab_id}}"><br>
+    Name :<input type="text" name="name" [(ngModel)]="booking.name"><br>
+    Pickup_Location:<input type="text" name="pickup_Location" [(ngModel)]="booking.pickup_Location"><br>
+    Drop_Location:<input type="text" name="drop_Location" [(ngModel)]="booking.drop_Location"><br>
+    Date:<input type="text" name="date" [(ngModel)]="booking.date"><br>
+    Time:<input type="text" name="time" [(ngModel)]="booking.time"><br>
+    Cab_Type:<input type="text" name="cab_type" [(ngModel)]="booking.cab_type"><br>
+<input type="submit" value="Update" (click)="updateBooking()">
+</form>
+</div> -->

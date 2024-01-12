@@ -1,0 +1,70 @@
+<br>
+<div class="col-md-60">
+<div align ="center" class="card">
+<h1 ><i> Login </i></h1>
+<form >
+<div class ="mb-3" >
+<label for="exampleInputEmail1" class="form-label">Username </label>
+<input type="text"  [(ngModel)]="user.user_name" name="name" placeholder="Enter Username">
+</div>
+<div class ="mb-3" >
+<label for="exampleInputPassword1" class="form-label">Password</label>
+<input type="password" [(ngModel)]="user.password" name="password" placeholder="Enter Password">
+</div>
+<div>
+<input type="submit" value="Login" (click)="loginCheck()" style="background-color: aqua;">
+</div>
+<br>
+<h5>Not a member ?<a href="/user-register"><u> Register here</u> </a></h5>
+</form>
+</div> 
+</div>
+ 
+ <!-- <br>
+    <div align ="center">
+<h1 style="color: blueviolet;"><i> Login Form</i></h1>
+<form >
+<div class ="form-group" style="color:brown">
+    <label class="col-sm-1 col-form-label">Username </label>
+    <input type="text"  [(ngModel)]="user.user_name" name="name" placeholder="Enter Username">
+    </div>
+<div class ="form-group" style="color:brown">
+    <label class="col-sm-1 col-form-label">Password</label>
+    <input type="password" [(ngModel)]="user.password" name="password" placeholder="Enter Password">
+</div>
+<div>
+<input type="submit" value="Login" (click)="loginCheck()" style="background-color: aqua;">
+</div>
+<br>
+<h5>Not a member ?<a href="/user-register"><u> Register here</u> </a></h5>
+</form>
+</div> 
+  ---------------
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"> 
+            </script> 
+</head>
+<body ng-app="">
+<br>
+    <div align ="center">
+<h1 style="color: blueviolet;"><i> Login Form</i></h1>
+<form  ng-app="" name="form1">
+<div for="colFormLabelSm" style="color:brown" >
+    <label class="col-sm-2 col-form-label">Username </label>
+    <input type="text"  [(ngModel)]="user.user_name" name="name" placeholder="Enter Username" required>
+    <span ng-show="form1.name.$pristine && form1.name.$invalid"> 
+                The name is required.</span>   
+</div>
+<div for="colFormLabelSm" style="color:brown">
+    <label class="col-sm-2 col-form-label">Password</label>
+    <input type="password" [(ngModel)]="user.password" name="password" placeholder="Enter Password" required>
+</div>
+<div>
+<input type="submit" value="Login" (click)="loginCheck()" style="background-color: aqua;">
+</div>
+<br>
+<h5>Not a member ?<a href="/user-register"><u> Register here</u> </a></h5>
+</form>
+</div>
+</body>   -->

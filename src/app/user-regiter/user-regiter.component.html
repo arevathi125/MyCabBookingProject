@@ -1,0 +1,29 @@
+<br>
+<div align ="center">
+    <h1><i> Register </i></h1>
+    <div class="form">
+    <form ng-app="" name="myForm">
+        <div  for="colFormLabelSm">
+            <label class="col-sm-1 col-form-label">Username </label>
+            <input type="text" [(ngModel)]="user.user_name" name="user_name" required>
+        </div>
+        <div  for="colFormLabelSm">
+            <label class="col-sm-1 col-form-label">Password </label>
+            <input type="password" [(ngModel)]="user.password" name="password" required >
+        </div>
+        <div for="colFormLabelSm">
+            <label class="col-sm-1 col-form-label">Phone number </label>
+            <input type="text" [(ngModel)]="user.phone_no" name="phone_no" required >
+        </div>
+    <div for="colFormLabelSm">
+        <label class="col-sm-1 col-form-label">Email </label>
+        <input type="email" [(ngModel)]="user.email"name="email" required >
+           </div>
+    <br>
+    <div class="submit" >
+       <input type="submit" value="Register" (click)="register()" style="background-color: aquamarine;">
+    </div>
+        </form>
+    </div>
+</div>
+    <h3>{{message}}</h3> 
